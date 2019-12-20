@@ -1,0 +1,15 @@
+<div class="container my-2">
+  <div class="row">
+
+    <img src="{{ track.album.images[0].url }}" class="col-3">
+
+    <div class="col-9">
+      <div class="h6">{{ track.name }}</div>
+      <div>{{ track.album.release_date }}</div>
+      <div>
+        <span *ngFor="let artist of track.artists" class="mr-2">{{ artist.name }}</span>
+      </div>
+    </div>
+
+  </div>
+</div>
